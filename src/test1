@@ -1,3 +1,6 @@
-a = 1
-b = a
-print(b)
+import mnist_loader
+import network
+training_data, validation_data, test_data = mnist_loader.load_data_wrapper()
+print("training data")
+print(type(training_data))
+
